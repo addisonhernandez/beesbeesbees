@@ -22,7 +22,7 @@ var ForagerBee = function() {
 
 };
 
-ForagerBee.prototype = Object.create(Bee.prototype);
+ForagerBee.prototype = new Bee();
 ForagerBee.prototype.constructor = ForagerBee;
 
 ForagerBee.prototype.forage = function (treasure) {
